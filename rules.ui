@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lbl_rules">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>781</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Игроки постепенно увеличивают сумму карт до 63. Используется колода в 54 карты (ценность карт соответствует их
+номеру, после валета - 10, туз - 11, джокер - 0). Сначала игрок вытаскивает из колоды карту, только не показывая
+ее остальным, затем говорит, что это за карта, и кладет ее в кучу (не показывая). Однако не обязательно говорить
+чистую правду - можно слегка приврать. И так по очереди. Постепенно суммарное число будет расти, только не
+известно, верно ли оно. В этой игре суммарное число не должно превышать 63. Если игрок считает, что с его
+картой сумма в куче переваливает за 63, то он говорит &quot;Пасс&quot;. Сказав &quot;Пасс&quot; игрок выходит из игры. После этого
+карты из кучи вскрываются. Если суммарное число не превышает 63, то оставшийся игрок победил, иначе это
+для него поражение (то есть сумма больше 63).</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_menu">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Назад в меню</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_name">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Правила настольной игры:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_name_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>781</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Особенности приложения:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_wow_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Если противник случайно увидел вашу карту, то нажмите кнопку НАЗАД В МЕНЮ на игровом поле и
+ПРОДОЛЖИТЬ, после перехода в меню (карта автоматически сменится на другую, а та,
+которая была замечена противником переместиться в любую часть колоды).</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_wow_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>781</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>После того, как игрок нажал ПАСС, то в меню поздравления победителя есть кнопка
+ПОСМОТРЕТЬ РЕАЛЬНЫЕ КАРТЫ, нажав на которую можно будет увидеть реальные карты,
+которые были у игроков на руках во время данной игры. Назваться ход будет следующим образом:
+ *номер хода* *имя игрока*</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_wow">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>480</y>
+      <width>781</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>А всё остальное можно будет и самим понять :)
+Если появятся вопросы по работе приложения, то пишите сюда:
+denjasan@yandex.ru
+С любовью, Денис Родионов</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_back_pic">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_wow_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>781</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Если у Вас возникли проблемы с размером шрифта, то вы всегда можете выставить нужный Вам размер в настройках.
+(Введите &quot;0&quot; для установки размера по умолчанию)</string>
+    </property>
+   </widget>
+   <zorder>lbl_back_pic</zorder>
+   <zorder>lbl_rules</zorder>
+   <zorder>b_menu</zorder>
+   <zorder>lbl_name</zorder>
+   <zorder>lbl_name_2</zorder>
+   <zorder>lbl_wow_1</zorder>
+   <zorder>lbl_wow_2</zorder>
+   <zorder>lbl_wow</zorder>
+   <zorder>lbl_wow_3</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
